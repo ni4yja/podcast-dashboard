@@ -1,65 +1,73 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        podcast-dashboard
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <v-app>
+    <v-navigation-drawer
+      absolute
+      app
+      permanent
+      floating
+      right
+      width="380"
+      style="background-color: #f2f8fd"
+      class="pa-14"
+    >
+      <div class="text-center mt-16">
+        <v-img
+          :src="require(`~/assets/liuba.png`)"
+          alt="profile-picture"
+          width="100"
+          class="ml-auto mr-auto"
+        ></v-img>
+        <h2 class="mt-6 font-weight-medium">Liuba Kuibida</h2>
       </div>
-    </div>
-  </section>
+      <v-list class="mt-11 pa-0">
+        <v-list-item class="pa-0" v-for="(item, i) in items" :key="i">
+          <v-list-item-icon>
+            <v-icon v-text="item.icon"></v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title
+              v-text="item.text"
+              class="font-weight-medium mb-2"
+            ></v-list-item-title>
+            <v-list-item-subtitle
+              v-text="item.sub"
+              class="grey--text"
+            ></v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+  </v-app>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import AppLogo from "~/components/AppLogo.vue";
 
 export default {
   components: {
-    AppLogo
-  }
-}
+    AppLogo,
+  },
+  data: () => ({
+    items: [
+      {
+        icon: "mdi-account-supervisor-outline",
+        text: "Following podcasters",
+        sub: "14 podcasters",
+      },
+      {
+        icon: "mdi-playlist-plus",
+        text: "Saved podcasts",
+        sub: "14 podcasters",
+      },
+      {
+        icon: "mdi-history",
+        text: "History",
+      },
+    ],
+  }),
+};
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
 

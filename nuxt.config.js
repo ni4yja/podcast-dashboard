@@ -20,6 +20,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  buildModules: [
+    '@nuxtjs/vuetify'
+  ],
   build: {
     /*
     ** Run ESLint on save
