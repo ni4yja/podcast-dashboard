@@ -1,10 +1,16 @@
 <template>
-  <h1>Popular</h1>
+  <div>
+    <HomeHeader />
+    <h2>Popular</h2>  
+  </div>
 </template>
 
 <script>
+import HomeHeader from "~/components/HomeHeader.vue";
 export default {
-  layout: 'HomeHeader'
+  components: {
+    HomeHeader
+  }
 }
 </script>
 

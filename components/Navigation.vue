@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="ml-n4">
     <v-list>
       <v-item-group>
         <v-item link class="menu-link mr-12"
@@ -38,7 +38,7 @@ export default {};
   display: none;
 }
 
-.menu-link.nuxt-link-active::after {
+.menu-link.nuxt-link-exact-active::after {
   display: block;
 }
 </style>
