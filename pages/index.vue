@@ -28,8 +28,8 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col style="border: 2px solid blue">
-            <div style="width: 370px"></div>
+          <v-col>
+            <Player />  
           </v-col>
         </v-row>
       </v-container>
@@ -41,12 +41,14 @@
 import HomeHeader from "~/components/HomeHeader.vue";
 import HomeSidebar from "~/components/HomeSidebar.vue";
 import HomeSearch from "~/components/HomeSearch.vue";
+import Player from "~/components/Player.vue";
 
 export default {
   components: {
     HomeHeader,
     HomeSidebar,
     HomeSearch,
+    Player
   },
 };
 </script>
