@@ -5,6 +5,7 @@
     color="rgba(0,0,0,0)"
     height="130"
     style="right: 450px"
+    class="home-header"
   >
     <Navigation />
     <v-spacer></v-spacer>

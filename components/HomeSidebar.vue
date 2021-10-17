@@ -6,11 +6,11 @@
     right
     width="380"
     style="background-color: #f2f8fd"
-    class="pa-14"
+    class="home-sidebar pa-14"
   >
     <div class="text-center mt-10">
       <v-img
-        :src="require(`~/assets/liuba.png`)"
+        :src="require(`~/assets/img/liuba.png`)"
         alt="profile-picture"
         width="100"
         class="ml-auto mr-auto"

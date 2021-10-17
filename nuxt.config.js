@@ -20,6 +20,7 @@ module.exports = {
   /*
   ** Build configuration
   */
+  css: ["@/assets/css/main.css"],
   buildModules: [
     '@nuxtjs/vuetify'
   ],

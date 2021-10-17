@@ -1,0 +1,113 @@
+/* HomeSearch Component */
+.search {
+  position: relative;
+}
+
+.search input {
+  border: 2px solid black;
+  width: 100%;
+  height: 84px;
+  padding: 1rem 1rem 1rem 3rem;
+  outline: none;
+  color: transparent;
+}
+
+.search label {
+  position: absolute;
+  left: calc(50% - 15px);
+  bottom: calc(50% - 15px);
+  transition: transform ease .3s;
+}
+
+.search input:focus {
+  color: #000;
+  transition: color 0s ease .3s;
+}
+
+.search input.blurred {
+  color: #000;
+}
+
+.search input:focus + label {
+  transform: translateX(-120px);
+}
+
+.search input.blurred + label {
+  transform: translateX(-120px);
+}
+
+/* Player Component */
+.player .progress-line {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  width: calc(100% - 24px);
+}
+
+.player .progress-line .v-progress-linear__background {
+  background: #e7eaf2 !important;
+  opacity: 1 !important;
+}
+
+.player .progress-line .v-progress-linear__determinate {
+  background: #e35376 !important;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .v-application .global-sidebar {
+    display: none;
+  }
+
+  .v-application .home-header {
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0 30px;
+    border-color: #fff !important;
+    background: #fff !important;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 10%) !important;
+  }
+
+  .v-application .home-sidebar {
+    margin-top: 130px;
+  }
+
+  .v-application .v-main.home-main {
+    max-width: calc(100% - 380px) !important;
+    padding: 130px 30px 0 30px !important;
+  }
+
+  .search-row {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .v-application .search input {
+    padding-left: 1rem;
+  }
+
+  .search input:focus + label {
+    transform: scale(0);
+  }
+  
+  .search input.blurred + label {
+    transform: scale(0);
+  }
+
+  .home-main .player {
+    margin-top: 30px;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .v-application .home-sidebar {
+    position: relative;
+    height: auto;
+  }
+
+  .v-application .v-main.home-main {
+    max-width: 100% !important;
+  }
+}

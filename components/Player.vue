@@ -1,11 +1,11 @@
 <template>
-  <div style="width: 370px">
+  <div class="player" style="width: 370px">
     <h2 class="font-weight-regular mt-1 mb-6">Where we finished</h2>
     <v-card flat color="#f2f8fd" class="rounded-xl pt-2 pb-3">
       <v-list-item three-line class="pl-6 pr-6">
         <v-list-item-avatar tile size="70" class="rounded-xl">
           <v-img
-            :src="require(`~/assets/01.jpeg`)"
+            :src="require(`~/assets/img/01.jpeg`)"
             alt="podcast-picture"
           ></v-img>
         </v-list-item-avatar>
@@ -32,19 +32,4 @@ export default {};
 </script>
 
 <style>
-.progress-line {
-  position: absolute;
-  bottom: 0;
-  left: 12px;
-  width: calc(100% - 24px);
-}
-
-.progress-line .v-progress-linear__background {
-  background: #e7eaf2 !important;
-  opacity: 1 !important;
-}
-
-.progress-line .v-progress-linear__determinate {
-  background: #e35376 !important;
-}
 </style>

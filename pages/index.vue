@@ -2,9 +2,9 @@
   <div>
     <HomeHeader />
     <HomeSidebar />
-    <v-main style="max-width: 910px;" class="pr-13">
+    <v-main style="max-width: 910px;" class="home-main pr-13">
       <v-container fluid class="mt-6 pa-0">
-        <v-row no-gutters>
+        <v-row class="search-row" no-gutters>
           <v-col class="mr-15">
             <HomeSearch />
             <v-row class="mt-3">

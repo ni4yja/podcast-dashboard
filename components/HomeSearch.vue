@@ -20,40 +20,4 @@ export default {
 </script>
 
 <style>
-.search {
-  position: relative;
-}
-
-.search input {
-  border: 2px solid black;
-  width: 100%;
-  height: 84px;
-  padding: 1rem 1rem 1rem 3rem;
-  outline: none;
-  color: transparent;
-}
-
-.search label {
-  position: absolute;
-  left: calc(50% - 15px);
-  bottom: calc(50% - 15px);
-  transition: transform ease .3s;
-}
-
-.search input:focus {
-  color: #000;
-  transition: color 0s ease .3s;
-}
-
-.search input.blurred {
-  color: #000;
-}
-
-.search input:focus + label {
-  transform: translateX(-120px);
-}
-
-.search input.blurred + label {
-  transform: translateX(-120px);
-}
 </style>
