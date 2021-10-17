@@ -4,7 +4,7 @@
     flat
     color="rgba(0,0,0,0)"
     height="130"
-    style="width: calc(100% - 562px)"
+    style="right: 450px"
   >
     <Navigation />
     <v-spacer></v-spacer>

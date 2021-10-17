@@ -2,7 +2,7 @@
   <div>
     <HomeHeader />
     <HomeSidebar />
-    <v-main style="max-width: 910px" class="pr-13">
+    <v-main style="max-width: 910px;" class="pr-13">
       <v-container fluid class="mt-6 pa-0">
         <v-row no-gutters>
           <v-col class="mr-15">
@@ -29,10 +29,11 @@
             </v-row>
           </v-col>
           <v-col>
-            <Player />  
+            <Player />
           </v-col>
         </v-row>
       </v-container>
+      <HomeBoard />
     </v-main>
   </div>
 </template>
@@ -42,13 +43,15 @@ import HomeHeader from "~/components/HomeHeader.vue";
 import HomeSidebar from "~/components/HomeSidebar.vue";
 import HomeSearch from "~/components/HomeSearch.vue";
 import Player from "~/components/Player.vue";
+import HomeBoard from "~/components/HomeBoard.vue";
 
 export default {
   components: {
     HomeHeader,
     HomeSidebar,
     HomeSearch,
-    Player
+    Player,
+    HomeBoard
   },
 };
 </script>
