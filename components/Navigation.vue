@@ -21,24 +21,4 @@ export default {};
 </script>
 
 <style>
-.v-application .menu-link {
-  color: #000;
-  text-decoration: none;
-  position: relative;
-}
-
-.menu-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -7px;
-  width: 20px;
-  height: 3px;
-  background: #e35176;
-  display: none;
-}
-
-.menu-link.nuxt-link-exact-active::after {
-  display: block;
-}
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <v-container fluid class="mt-16 pa-0">
+  <v-container fluid class="home-board mt-16 pa-0">
     <v-row no-gutters class="pt-6">
       <h1 class="fon-weight-medium mb-10">Personal board</h1>
     </v-row>
-    <v-row no-gutters>
-      <v-col class="mr-4">
+    <v-row no-gutters class="home-board-row">
+      <v-col class="left-col mr-4">
         <v-row no-gutters>
           <v-col>
             <v-card
@@ -78,7 +78,7 @@
               <v-col>
                 <v-card
                   flat
-                  class="rounded-xl"
+                  class="rounded-xl design-card"
                   color="#f2f8fd"
                   width="180"
                   height="145"

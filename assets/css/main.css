@@ -1,3 +1,25 @@
+/* Navigation */
+.v-application .menu-link {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 20px;
+  height: 3px;
+  background: #e35176;
+  display: none;
+}
+
+.menu-link.nuxt-link-exact-active::after {
+  display: block;
+}
+
 /* HomeSearch Component */
 .search {
   position: relative;
@@ -99,15 +121,53 @@
     margin-top: 30px;
     width: 100% !important;
   }
+
+  .home-board-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-board .left-col {
+    margin-bottom: 16px;
+    margin-right: 0 !important;
+  }
+
+  .home-board .v-card {
+    width: auto !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .v-application .home-sidebar {
     position: relative;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .v-application .home-sidebar .v-navigation-drawer__content {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .v-navigation-drawer__content::-webkit-scrollbar{
+    width: 0px;
   }
 
   .v-application .v-main.home-main {
     max-width: 100% !important;
+    padding-top: 0 !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body .v-application .menu-link {
+    margin-right: 1.5rem !important;
+  }
+
+  .v-application .design-card .v-card__actions {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
