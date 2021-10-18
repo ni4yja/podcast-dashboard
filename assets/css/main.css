@@ -58,6 +58,11 @@
   transform: translateX(-120px);
 }
 
+.v-application .trends a {
+  color: #000;
+  text-decoration: none;
+}
+
 /* Player Component */
 .player .progress-line {
   position: absolute;

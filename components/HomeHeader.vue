@@ -4,7 +4,7 @@
     flat
     color="rgba(0,0,0,0)"
     height="130"
-    style="right: 450px"
+    style="right: 56px"
     class="home-header"
   >
     <Navigation />

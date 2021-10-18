@@ -18,12 +18,12 @@
               </v-col>
               <v-col>
                 <v-card
-                  class="rounded-xl d-flex justify-center align-center"
+                  class="rounded-xl d-flex justify-center align-center trends"
                   flat
                   color="#f9d11d"
                   style="height: 100%"
                 >
-                  <v-card-title>Trends</v-card-title>
+                  <v-card-title><NuxtLink to="/popular">Trends</NuxtLink></v-card-title>
                 </v-card>
               </v-col>
             </v-row>

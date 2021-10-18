@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <input id="serch" type="text" class="rounded-xl" v-on:blur="handleBlur">
+    <input id="serch" type="search" class="rounded-xl" v-on:blur="handleBlur">
     <label for="search"><v-icon color="black" size="30">mdi-magnify</v-icon></label>
   </div>
 </template>
