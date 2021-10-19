@@ -5,86 +5,72 @@
     floating
     right
     width="430"
-    style="background-color: #f2f8fd"
+    style="background-color: #f2f8fd; overflow: visible;"
     class="home-sidebar pa-14"
   >
-    <div class="text-center mt-10">
-      <v-img
-        :src="require(`~/assets/img/liuba.png`)"
-        alt="profile-picture"
-        width="100"
-        class="ml-auto mr-auto"
-      ></v-img>
-      <h2 class="mt-6 font-weight-medium">Liuba Kuibida</h2>
-    </div>
-    <v-list class="mt-11 pa-0">
-      <v-list-item class="pa-0" v-for="(item, i) in items" :key="i">
-        <v-list-item-icon>
-          <v-icon v-text="item.icon"></v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title
-            v-text="item.text"
-            class="font-weight-medium mb-2"
-          ></v-list-item-title>
-          <v-list-item-subtitle
-            v-text="item.sub"
-            class="grey--text"
-          ></v-list-item-subtitle>
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
-    <v-toolbar flat dense color="rgba(0,0,0,0)" class="mt-6">
-      <v-toolbar-title class="subheading ml-n4">Balance</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <span class="headline font-weight-light mr-n4 mb-n4">$127</span>
-    </v-toolbar>
-    <div>
-      <a href="#" style="color: #e35376">Add funds</a>
-      <v-icon color="#e35376" size="20">mdi-chevron-right</v-icon>
-    </div>
-    <v-card class="mt-11 rounded-xl" flat color="#e35376">
-      <v-card-subtitle style="color: #fff"
-        >Anything to tell the audience?</v-card-subtitle
+    <v-card
+      flat
+      color="rgba(0, 0, 0, 0)"
+      class="d-flex flex-column align-center"
+      style="margin-top: 80px"
+    >
+      <v-avatar size="95">
+        <img
+          :src="require(`~/assets/img/profile.jpeg`)"
+          alt="profile-img-small"
+        />
+      </v-avatar>
+      <v-card-title class="text-h5 font-weight-medium"
+        >Elsie Barnes</v-card-title
       >
-      <v-card-text class="headline mt-3" style="color: #fff"
-        >Become <br />
-        <strong>a podcaster!</strong></v-card-text
+      <v-card-subtitle class="text-body-1 mt-n2"
+        >Expert in
+        <span class="text-decoration-underline"
+          >UI/UX design</span
+        ></v-card-subtitle
       >
       <v-card-actions>
-        <v-spacer></v-spacer>
-        <a href="#" style="color: #fff">Learn more</a>
-        <v-icon color="#efff" size="20">mdi-chevron-right</v-icon>
+        <v-btn
+          outlined
+          rounded
+          text
+          large
+          color="white"
+          class="pt-2 pb-2 pl-12 pr-12 mr-9"
+          style="
+            background-color: #e35376;
+            border: none;
+            text-transform: capitalize;
+            letter-spacing: 0;
+          "
+          >Follow</v-btn
+        >
+        <v-btn text style="text-transform: lowercase; letter-spacing: 0">
+          2k followers
+        </v-btn>
       </v-card-actions>
+      <v-card-text class="mt-6" style="line-height: 2"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum
+        eligendi ullam quae quia, iste cumque quis ab vero in.</v-card-text
+      >
     </v-card>
-    <div class="mt-12 d-flex justify-center">
-      <v-icon class="mr-13">mdi-cog-outline</v-icon>
-      <v-icon>mdi-exit-to-app</v-icon>
+    <h5 class="text-h5 font-weight-regular mt-7">More podcasts by Elsie</h5>
+    <div class="mt-9 d-flex" style="width: 480px; position: absolute; left: -50px;">
+      <v-card class="rounded-xl mr-4" min-height="200" flat img="podcast-cover-1.jpeg" style="min-width: 270px;">
+      </v-card>
+      <v-card class="rounded-xl" min-height="200" flat img="podcast-cover-2.jpeg" style="min-width: 270px;">
+      </v-card>
     </div>
+    <v-toolbar flat dense color="rgba(0,0,0,0)" style="margin-top: 250px;">
+      <v-spacer></v-spacer>
+      <a href="#" text class="black--text">See all podcasts</a>
+      <v-icon class="black--text" size="20">mdi-chevron-right</v-icon>
+    </v-toolbar>
   </v-navigation-drawer>
 </template>
 
 <script>
-export default {
-  data: () => ({
-    items: [
-      {
-        icon: "mdi-account-supervisor-outline",
-        text: "Following podcasters",
-        sub: "14 podcasters",
-      },
-      {
-        icon: "mdi-playlist-plus",
-        text: "Saved podcasts",
-        sub: "14 podcasters",
-      },
-      {
-        icon: "mdi-history",
-        text: "History",
-      },
-    ],
-  }),
-};
+export default {};
 </script>
 
 <style>
