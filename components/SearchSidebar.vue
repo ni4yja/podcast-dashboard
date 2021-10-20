@@ -6,7 +6,7 @@
     right
     width="430"
     style="background-color: #f2f8fd; overflow: visible;"
-    class="home-sidebar pa-14"
+    class="search-sidebar pa-14"
   >
     <v-card
       flat
