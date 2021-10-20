@@ -1,5 +1,5 @@
 <template>
-  <nav class="ml-n4">
+  <nav class="navigation ml-n4">
     <v-list>
       <v-item-group>
         <v-item link class="menu-link mr-12"

@@ -11,8 +11,8 @@
           >
         </v-row>
         <v-row class="mt-9">
-          <v-col style="max-width: 590px" class="pa-0 mr-9">
-            <v-card flat class="rounded-0">
+          <v-col style="max-width: 590px" class="article-wrapper pa-0 mr-9">
+            <v-card flat class="article-card rounded-0">
               <v-img
                 height="345"
                 class="rounded-xl"
@@ -29,8 +29,8 @@
                 "
                 ><v-icon size="30" color="white">mdi-play</v-icon></v-avatar
               >
-              <v-card-title class="px-0 pt-9 text-h4 font-weight-medium"
-                >About interfaces and prototyping for <br />virtual reality in
+              <v-card-title class="px-0 pt-9 text-h4 font-weight-medium" style="word-break: break-word"
+                >About interfaces and prototyping for virtual reality in
                 future</v-card-title
               >
               <v-toolbar flat dense class="ml-n4 mr-n4" color="rgba(0,0,0,0)">

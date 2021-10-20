@@ -12,7 +12,7 @@
       flat
       color="rgba(0, 0, 0, 0)"
       class="d-flex flex-column align-center"
-      style="margin-top: 80px"
+      style="margin-top: 90px"
     >
       <v-avatar size="95">
         <img
@@ -29,7 +29,7 @@
           >UI/UX design</span
         ></v-card-subtitle
       >
-      <v-card-actions>
+      <v-card-actions class="px-0">
         <v-btn
           outlined
           rounded
@@ -49,19 +49,19 @@
           2k followers
         </v-btn>
       </v-card-actions>
-      <v-card-text class="mt-6" style="line-height: 2"
+      <v-card-text class="mt-5" style="line-height: 2"
         >Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum
         eligendi ullam quae quia, iste cumque quis ab vero in.</v-card-text
       >
     </v-card>
     <h5 class="text-h5 font-weight-regular mt-7">More podcasts by Elsie</h5>
-    <div class="mt-9 d-flex" style="width: 480px; position: absolute; left: -50px;">
+    <div class="podcast-wrapper mt-8 d-flex" style="width: 480px; position: absolute; left: -50px;">
       <v-card class="rounded-xl mr-4" min-height="200" flat img="podcast-cover-1.jpeg" style="min-width: 270px;">
       </v-card>
       <v-card class="rounded-xl" min-height="200" flat img="podcast-cover-2.jpeg" style="min-width: 270px;">
       </v-card>
     </div>
-    <v-toolbar flat dense color="rgba(0,0,0,0)" style="margin-top: 250px;">
+    <v-toolbar flat dense color="rgba(0,0,0,0)" class="link-holder" style="margin-top: 250px;">
       <v-spacer></v-spacer>
       <a href="#" text class="black--text">See all podcasts</a>
       <v-icon class="black--text" size="20">mdi-chevron-right</v-icon>
