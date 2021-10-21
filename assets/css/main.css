@@ -168,6 +168,56 @@
   display: block;
 }
 
+.popular-search input {
+  height: 50px;
+  outline: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.popular-search ::placeholder {
+  font-size: 2.5rem;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.search-cards .fashion {
+  background: rgb(217, 252, 254);
+  background: linear-gradient(180deg,rgba(217, 252, 254, 1) 0%, rgba(182, 211, 254, 1) 50%
+  );
+}
+
+.search-cards .art {
+  background: rgb(225,188,250);
+  background: linear-gradient(180deg, rgba(225,188,250,1) 0%, rgba(240,189,217,1) 50%);
+}
+
+.search-cards .talks {
+  background: rgb(170,227,253);
+  background: linear-gradient(180deg, rgba(170,227,253,1) 0%, rgba(245,220,248,1) 50%);
+}
+
+.search-cards .food {
+  background: rgb(244,200,167);
+  background: linear-gradient(180deg, rgba(244,200,167,1) 0%, rgba(253,237,195,1) 50%);
+}
+
+.search-cards .drink {
+  background: rgb(249,242,204);
+  background: linear-gradient(180deg, rgba(249,242,204,1) 0%, rgba(207,251,243,1) 50%);
+}
+
+.search-cards .street {
+  background: rgb(178,203,254);
+  background: linear-gradient(180deg, rgba(178,203,254,1) 0%, rgba(193,197,254,1) 50%);
+}
+
+.search-cards .inspiration {
+  background: rgb(245,218,247);
+  background: linear-gradient(180deg, rgba(245,218,247,1) 0%, rgba(174,227,254,1) 50%);
+}
+
 @media only screen and (max-width: 1300px) {
   .v-application .global-sidebar {
     display: none;

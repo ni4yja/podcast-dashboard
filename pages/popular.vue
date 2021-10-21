@@ -49,17 +49,38 @@
           ></v-col>
         </v-row>
         <v-row>
-          <v-toolbar
-            flat
-            dense
-            color="rgba(0,0,0,0)"
-          >
-            <a href="#" text class="white--text" style="opacity: 0.6">Filters</a>
+          <v-toolbar flat dense color="rgba(0,0,0,0)">
+            <a href="#" text class="white--text" style="opacity: 0.6"
+              >Filters</a
+            >
             <v-spacer></v-spacer>
             <a href="#" text class="yellow--text">See more</a>
             <v-icon class="yellow--text" size="20">mdi-chevron-right</v-icon>
           </v-toolbar>
         </v-row>
+      </v-container>
+      <v-container fluid class="pa-0 mx-0 mt-16" style="width: 530px">
+        <v-row>
+          <v-toolbar flat dense color="rgba(0,0,0,0)">
+            <div class="popular-search">
+              <input placeholder="Search" type="search" />
+            </div>
+            <v-spacer></v-spacer>
+            <span
+              ><a
+                href="#"
+                text
+                class="white--text"
+                style="text-decoration: none; opacity: 0.6"
+                >See history</a
+              >
+              <v-icon class="white--text" size="20" style="opacity: 0.6"
+                >mdi-chevron-right</v-icon
+              ></span
+            >
+          </v-toolbar>
+        </v-row>
+        <SearchCards />
       </v-container>
     </v-main>
   </div>
@@ -68,11 +89,13 @@
 <script>
 import PageHeader from "~/components/PageHeader.vue";
 import PopularSidebar from "~/components/PopularSidebar.vue";
+import SearchCards from "~/components/SearchCards.vue";
 
 export default {
   components: {
     PageHeader,
     PopularSidebar,
+    SearchCards
   },
   data: () => ({
     selectedItem: 1,
