@@ -80,7 +80,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.staggering()
+  },
+  methods: {
+    staggering() {
+      const gsap = this.$gsap
+      gsap.from('.popular-board .v-card', {
+        opacity: 0,
+        scale: 0,
+        stagger: 0.2
+      })
+    }
+  }
+}
 </script>
 
 <style>

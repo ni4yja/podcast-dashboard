@@ -144,7 +144,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.staggering()
+  },
+  methods: {
+    staggering() {
+      const gsap = this.$gsap
+      gsap.from('.home-board .v-card', {
+        opacity: 0,
+        scale: 0,
+        stagger: 0.1
+      })
+    }
+  }
+}
 </script>
 
 <style>

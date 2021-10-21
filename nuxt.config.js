@@ -22,7 +22,7 @@ module.exports = {
   */
   css: ["@/assets/css/main.css"],
   buildModules: [
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify', 'nuxt-gsap-module'
   ],
   build: {
     /*
