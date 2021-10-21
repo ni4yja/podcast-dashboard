@@ -5,10 +5,10 @@
     <v-main class="popular-main">
       <v-container fluid class="popular-bar pa-13" style="width: 800px">
         <v-row no-gutters>
-          <v-col cols="5">
+          <v-col>
             <h1 class="font-weight-medium white--text">Popular</h1>
           </v-col>
-          <v-col cols="7">
+          <v-col>
             <v-list flat color="rgba(0, 0, 0, 0)" class="popular-nav pa-0">
               <v-list-item-group v-model="selectedItem">
                 <v-list-item
@@ -59,7 +59,7 @@
           </v-toolbar>
         </v-row>
       </v-container>
-      <v-container fluid class="pa-0 mx-0 mt-16" style="width: 530px">
+      <v-container fluid class="search-bar pa-0 mx-0 mt-16" style="width: 530px">
         <v-row>
           <v-toolbar flat dense color="rgba(0,0,0,0)">
             <div class="popular-search">

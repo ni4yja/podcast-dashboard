@@ -80,9 +80,8 @@
         >
       </v-row>
     </v-col>
-    <v-col>
-      <v-row no-gutters>
-        <v-card
+    <v-col col="auto">
+      <v-card
           flat
           width="110"
           height="192"
@@ -91,7 +90,6 @@
             >Inspiration</v-card-subtitle
           ></v-card
         >
-      </v-row>
     </v-col>
   </v-row>
 </template>
