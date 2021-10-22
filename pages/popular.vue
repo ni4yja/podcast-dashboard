@@ -59,7 +59,11 @@
           </v-toolbar>
         </v-row>
       </v-container>
-      <v-container fluid class="search-bar pa-0 mx-0 mt-16" style="width: 530px">
+      <v-container
+        fluid
+        class="search-bar pa-0 mx-0 mt-16"
+        style="width: 530px"
+      >
         <v-row>
           <v-toolbar flat dense color="rgba(0,0,0,0)">
             <div class="popular-search">
@@ -90,12 +94,20 @@
 import PageHeader from "~/components/PageHeader.vue";
 import PopularSidebar from "~/components/PopularSidebar.vue";
 import SearchCards from "~/components/SearchCards.vue";
+import transitions from "~/animation/transitions.js";
 
 export default {
   components: {
     PageHeader,
     PopularSidebar,
-    SearchCards
+    SearchCards,
+  },
+  transition(to, from) {
+    // if (!from) {
+    //   return 'transitions.slideLeft'
+    // }
+    // return +to.query.page < +from.query.page ? 'transitions.slideRight' : 'transitions.slideLeft'
+    return to.query.slideRight ? transitions.slideLeft : transitions.slideRight
   },
   data: () => ({
     selectedItem: 0,
@@ -106,6 +118,7 @@ export default {
       { text: "Art&Craft" },
     ],
   }),
+  methods: {},
 };
 </script>
 

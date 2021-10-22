@@ -1,6 +1,6 @@
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.4s;
+  transition: opacity 0.3s;
 }
 .page-enter,
 .page-leave-to {
@@ -14,8 +14,7 @@
   position: relative;
 }
 
-.menu-link::after {
-  content: "";
+.menu-link span {
   position: absolute;
   left: 0;
   bottom: -7px;
@@ -25,7 +24,7 @@
   display: none;
 }
 
-.menu-link.nuxt-link-exact-active::after {
+.menu-link.nuxt-link-exact-active span {
   display: block;
 }
 

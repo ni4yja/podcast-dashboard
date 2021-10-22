@@ -39,6 +39,7 @@
 </template>
 
 <script>
+
 import HomeHeader from "~/components/HomeHeader.vue";
 import HomeSidebar from "~/components/HomeSidebar.vue";
 import HomeSearch from "~/components/HomeSearch.vue";
@@ -52,6 +53,17 @@ export default {
     HomeSearch,
     Player,
     HomeBoard
+  },
+  transition: {
+    name: 'custom',
+    css: false,
+    enter(el) {
+      this.$gsap.from('.menu-link .line', {
+        duration: 1,
+        width: 'calc(100% + 68px)',
+        left: '68px',
+      })
+    },
   },
 };
 </script>

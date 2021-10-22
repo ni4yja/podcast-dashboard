@@ -71,6 +71,17 @@ export default {
     PageHeader,
     SearchSidebar,
   },
+  transition: {
+    name: 'custom',
+    css: false,
+    enter(el) {
+      this.$gsap.from('.menu-link .line', {
+        duration: 1,
+        width: 'calc(100% + 68px)',
+        left: '-68px',
+      })
+    },
+  },
 };
 </script>
 
