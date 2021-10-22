@@ -103,11 +103,7 @@ export default {
     SearchCards,
   },
   transition(to, from) {
-    // if (!from) {
-    //   return 'transitions.slideLeft'
-    // }
-    // return +to.query.page < +from.query.page ? 'transitions.slideRight' : 'transitions.slideLeft'
-    return to.query.slideRight ? transitions.slideLeft : transitions.slideRight
+    return to.query.popular ? transitions.slideRight : transitions.slideLeft
   },
   data: () => ({
     selectedItem: 0,
