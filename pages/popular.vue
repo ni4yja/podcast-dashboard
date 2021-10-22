@@ -98,7 +98,7 @@ export default {
     SearchCards
   },
   data: () => ({
-    selectedItem: 1,
+    selectedItem: 0,
     items: [
       { text: "All" },
       { text: "Lifestyle" },

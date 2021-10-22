@@ -1,3 +1,12 @@
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.4s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
 /* Navigation */
 .v-application .menu-link {
   color: #000;
@@ -81,8 +90,12 @@
 }
 
 /* Popular Page */
-.v-application.popular .global-sidebar {
+.v-application.popular {
   background: #211d43 !important;
+}
+
+.v-application.popular .global-sidebar {
+  background: inherit !important;
 }
 
 .v-application.popular .global-sidebar .v-icon {
@@ -95,7 +108,6 @@
 }
 
 .v-application.popular .navigation {
-  background: #211d43;
   height: 100%;
   display: flex;
   align-items: center;
@@ -103,7 +115,6 @@
 }
 
 .v-application.popular .popular-main {
-  background: #211d43;
   height: 100vh;
 }
 
