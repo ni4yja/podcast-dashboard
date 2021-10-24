@@ -45,6 +45,7 @@ import HomeSidebar from "~/components/HomeSidebar.vue";
 import HomeSearch from "~/components/HomeSearch.vue";
 import Player from "~/components/Player.vue";
 import HomeBoard from "~/components/HomeBoard.vue";
+import transitions from "~/animation/transitions.js";
 
 export default {
   components: {
@@ -54,16 +55,8 @@ export default {
     Player,
     HomeBoard
   },
-  transition: {
-    name: 'custom',
-    css: false,
-    enter(el) {
-      this.$gsap.from('.index .menu-link .line', {
-        duration: 1,
-        width: 'calc(100% + 68px)',
-        left: '68px',
-      })
-    },
+  transition() {
+    return transitions.slideRight;
   },
 };
 </script>

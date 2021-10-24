@@ -103,7 +103,11 @@ export default {
     SearchCards,
   },
   transition(to, from) {
-    return to.query.popular ? transitions.slideRight : transitions.slideLeft
+    if (from.name === "index" && to.name === "popular") {
+      return transitions.slideLeft
+    } else {
+      return transitions.slideRight
+    }
   },
   data: () => ({
     selectedItem: 0,

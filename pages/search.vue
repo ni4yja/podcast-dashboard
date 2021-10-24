@@ -65,22 +65,15 @@
 <script>
 import PageHeader from "~/components/PageHeader.vue";
 import SearchSidebar from "~/components/SearchSidebar.vue";
+import transitions from "~/animation/transitions.js";
 
 export default {
   components: {
     PageHeader,
     SearchSidebar,
   },
-  transition: {
-    name: 'custom',
-    css: false,
-    enter(el) {
-      this.$gsap.from('.search .menu-link .line', {
-        duration: 1,
-        width: 'calc(100% + 68px)',
-        left: '-68px',
-      })
-    },
+  transition() {
+    return transitions.slideLeft;
   },
 };
 </script>
