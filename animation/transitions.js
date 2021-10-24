@@ -17,7 +17,7 @@ export default {
       this.$gsap.from(".menu-link .line", {
         duration: 1,
         width: "calc(100% + 68px)",
-        left: "68px",
+        right: "-68px",
       });
     },
   }
