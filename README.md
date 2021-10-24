@@ -1,6 +1,6 @@
-# podcast-dashboard
+# Podcast Dashboard
 
-> Nuxt.js project
+Nuxt.js + Vuetify project. Animation made with GSAP. [Designs](https://dribbble.com/shots/7209133-Dashboard-Podkast-Light/attachments/201948?mode=media) by [Outcrowd](https://dribbble.com/outcrowd) on [dribbble.com](https://dribbble.com/).
 
 ## Build Setup
 
