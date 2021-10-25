@@ -437,6 +437,7 @@
   .v-application .popular-sidebar .v-navigation-drawer__content {
     max-width: 360px;
     margin: 0 auto;
+    overflow: initial;
   }
 
   .v-application .v-main.home-main,
@@ -519,10 +520,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .v-application .search-sidebar .v-navigation-drawer__content {
-    max-width: 280px;
-  }
-
   .v-application.popular .popular-sidebar {
     padding: 56px 15px !important;
   }

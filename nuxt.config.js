@@ -24,7 +24,7 @@ module.exports = {
   buildModules: [
     '@nuxtjs/vuetify', 'nuxt-gsap-module'
   ],
-  mode: 'spa',
+  ssr: false,
   router: {
     base: '/podcast-dashboard/'
   },
