@@ -11,7 +11,7 @@
     <v-card
       flat
       color="rgba(0, 0, 0, 0)"
-      class="d-flex flex-column align-center"
+      class="search-card d-flex flex-column align-center"
       style="margin-top: 90px"
     >
       <v-avatar size="95">

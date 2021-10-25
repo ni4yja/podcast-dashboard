@@ -104,9 +104,9 @@ export default {
   },
   transition(to, from) {
     if (from.name === "index" && to.name === "popular") {
-      return transitions.slideLeft
+      return transitions.slideLeft;
     } else {
-      return transitions.slideRight
+      return transitions.slideRight;
     }
   },
   data: () => ({

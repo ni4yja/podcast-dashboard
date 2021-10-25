@@ -423,12 +423,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .v-application .home-sidebar,
-  .v-application .search-sidebar,
-  .v-application .popular-sidebar {
+  .v-application .v-navigation-drawer.home-sidebar,
+  .v-application .v-navigation-drawer.search-sidebar,
+  .v-application .v-navigation-drawer.popular-sidebar {
     position: relative;
     width: 100% !important;
     height: auto !important;
+    padding: 30px !important;
   }
 
   .v-application .home-sidebar .v-navigation-drawer__content,
@@ -452,6 +453,10 @@
 
   .v-application .v-main.search-main {
     padding-top: 24px !important;
+  }
+
+  .search-sidebar .search-card {
+    margin-top: 150px !important;
   }
 
   .search-sidebar .podcast-wrapper {
