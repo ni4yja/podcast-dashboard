@@ -24,11 +24,15 @@ module.exports = {
   buildModules: [
     '@nuxtjs/vuetify', 'nuxt-gsap-module'
   ],
+  mode: 'spa',
+  router: {
+    base: '/podcast-dashboard/'
+  },
   build: {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
