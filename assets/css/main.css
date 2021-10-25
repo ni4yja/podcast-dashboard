@@ -437,6 +437,9 @@
   .v-application .popular-sidebar .v-navigation-drawer__content {
     max-width: 360px;
     margin: 0 auto;
+  }
+
+  .v-application .home-sidebar .v-navigation-drawer__content {
     overflow: initial;
   }
 
