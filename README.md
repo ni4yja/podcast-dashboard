@@ -2,6 +2,8 @@
 
 Nuxt.js + Vuetify project. Animation made with GSAP. [Designs](https://dribbble.com/shots/7209133-Dashboard-Podkast-Light/attachments/201948?mode=media) by [Outcrowd](https://dribbble.com/outcrowd) on [dribbble.com](https://dribbble.com/).
 
+## [Live Demo](https://ni4yja.github.io/podcast-dashboard/) | [Article on Medium](https://ni4yja.medium.com/nav-links-animation-made-with-nuxt-js-and-gsap-a00adbe8b29e)
+
 ## Build Setup
 
 ``` bash
